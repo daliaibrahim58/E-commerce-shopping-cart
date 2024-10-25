@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Home Page</title>
+    <link rel="stylesheet" href="Css/font-awesome.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <!-- serif font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- /serif font -->
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="brand"> Shopping Cart </a>
+
+        <nav>
+            <ul id="links">
+                <li><a href="login.html">Sign In</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+            </ul> <!-- /links -->            
+            <ul id="user_info" style="display: none;">
+                <li><a href="profile.html" id="user"></a></li> <!-- For displaying the logged-in username -->
+                <li><a href="#" id="logOut">Log Out</a></li>
+            </ul>  <!-- /user_info -->
+        </nav> <!-- /nav -->
+            </div> <!-- /header-content -->
+        </div> <!-- /container -->
+    </header> <!-- /header -->
+
+
+    <section class="home">
+        <div class="container">
+            <div class="products"></div> <!-- /products -->
+            <div class="no-products" style="display: none;"> There is no items in fav-cart! </div> <!-- /no-products -->
+        </div> <!-- /container -->
+        
+    </section> <!-- /section -->
+
+    <script src="./js/productsData.js"></script>
+    <script src="./js/favItems.js"></script>
+    <script src="./js/generalHeader.js"></script>
+</body>
+</html>  

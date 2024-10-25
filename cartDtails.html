@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Cart details</title>
+    <link rel="stylesheet" href="Css/font-awesome.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/login.css">
+    <link rel="stylesheet" href="Css/cart.css">
+    <!-- serif font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- /serif font -->
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="brand"> Shopping Cart </a>
+
+        <nav>
+            <ul id="links">
+                <li><a href="login.html">Sign In</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+            </ul> <!-- /links -->            
+            <ul id="user_info" style="display: none;">
+                <li><a href="profile.html" id="user"></a></li> <!-- For displaying the logged-in username -->
+                <li><a href="#" id="logOut">Log Out</a></li>
+
+                <li class="cart_info">
+                    <a href="#" id="shopping_cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                    <span class="badge"></span>
+
+                    <div class="selected-items" style="display: none;">
+                        <p class="item-name"></p>
+                        <button><a href="cartProducts.html"> View all products </a></button>
+                    </div>
+                </li>
+            </ul>  <!-- /user_info -->
+        </nav> <!-- /nav -->
+            </div> <!-- /header-content -->
+        </div> <!-- /container -->
+    </header> <!-- /header -->
+
+
+    <section class="home">
+        <div class="container">
+            <div class="product-details">
+            </div> <!-- /product-details -->
+        </div> <!-- /container -->
+        
+    </section> <!-- /section -->
+
+    
+    <script src="./js/generalHeader.js"></script>
+    <script src="./js/cartDtails.js"></script>
+</body>
+</html>

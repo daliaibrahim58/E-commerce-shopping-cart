@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Home Page</title>
+    <link rel="stylesheet" href="Css/font-awesome.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/profile.css">
+    <link rel="stylesheet" href="Css/creatend-edit-Product-and-edit-profile.css">
+    <!-- serif font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
+    <!-- /serif font -->
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="brand"> Shopping Cart </a>
+
+        <nav>
+            <ul id="links">
+                <li><a href="login.html">Sign In</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+            </ul> <!-- /links -->            
+            <ul id="user_info" style="display: none;">
+                <li><a href="profile.html" id="user"></a></li> <!-- For displaying the logged-in username -->
+                <li><a href="#" id="logOut">Log Out</a></li>
+
+                <li class="cart_info">
+                    <a href="#" id="shopping_cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                    <span class="badge"></span>
+                    
+                    <div class="selected-items" style="display: none;">
+                        <p class="item-name"></p>
+                        <button><a href="cartProducts.html"> View all products </a></button>
+                    </div>
+                    <a class="add-to-fav" href="favItems.html" style="position: relative; left: 7px;"> Favorites </a>
+                    <a class="my-products-page" href="myProducts.html"> My-products </a>
+                </li>
+            </ul>  <!-- /user_info -->
+        </nav> <!-- /nav -->
+            </div> <!-- /header-content -->
+        </div> <!-- /container -->
+    </header> <!-- /header -->
+
+
+    <section class="home">
+        <div class="container">
+            <form id="edit-profile-form">
+                <input type="file" placeholder="Update your picture" id="update-pic">
+                <input type="text" id="edit-name" placeholder="Enter new name">
+                <input type="password" id="current-password" placeholder="Enter current password">
+                <span id="error-message" style="color: red; display: none;">Wrong password</span>
+                <input type="password" id="edit-password" placeholder="Enter new password">
+                <input type="submit" value="Edit" id="Edit-profile-btn">
+            </form>
+        </div> <!-- /container -->
+
+        <a class="create-product-icon">
+            <i class="fa fa-plus"></i>
+        </a>
+    </section> <!-- /section -->
+    <script src="./js/productsData.js"></script>
+    <script src="./js/generalHeader.js"></script>
+    <script src="./js/editProfile.js"></script>
+</body>
+</html>  

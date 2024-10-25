@@ -1,0 +1,29 @@
+.container-profile {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.user-info-profile {
+   position: relative;
+   top: 112px;
+   left: 63px;
+}
+
+.use-avatar {
+    width: 30%;
+    border-radius: 50%;
+}
+
+#email-profile {
+    margin-top: 5px;
+}
+
+#my-products-length-profile {
+    margin: 5px 0;
+}
+
+#edit-profile-link {
+    color: #7695FF;
+}
+

@@ -1,0 +1,51 @@
+/* Create product - Edit product - Edit profile */
+.create-product-page {
+
+}
+
+.create-product-page form,
+.edit-product-page form,
+#edit-profile-form,
+#edit-profile-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#edit-profile-form input,
+.create-product-page form input,
+.edit-product-page form input,
+.create-product-page form select#created-product-size,
+.edit-product-page form select#edit-product-size{
+    display: block;
+    width: 70%;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.create-product-page form input[type="submit"],
+#edit-profile-form input[type="submit"],
+.edit-product-page form input[type="submit"] {
+    background-color: #7695FF;
+    color: #fff;
+}
+
+.create-product-page form input[type="submit"]:hover,
+#edit-profile-form input[type="submit"]:hover,
+.edit-product-page form input[type="submit"]:hover {
+    opacity: .88;
+    cursor: pointer;
+    border: 0;
+}
+
+#error-message {
+    color: red;
+    display: none;
+    font-size: 14px;
+}
+  
